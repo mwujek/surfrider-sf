@@ -1,0 +1,23 @@
+$content-max-width: 1000px;
+$blue: #2672B5;
+
+.content-container{
+
+}
+#main-body{
+	//padding-top: 80px;
+}
+
+@import 'reset';
+@import 'mixin-keys';
+@import 'mixin-rules';
+@import 'home';
+@import 'hero-sections';
+@import 'admin';
+@import 'header';
+@import 'footer';
+
+
+body{
+	padding-top: 80px;
+}

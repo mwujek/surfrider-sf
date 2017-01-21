@@ -1,0 +1,34 @@
+header{
+	height: 50px;
+	width: 100%;
+	background: $blue;
+	position: fixed;
+	top: 0;
+	
+	.header-inner{
+		display: flex;
+		height: 100%;
+		align-items: center;
+		justify-content:space-between;
+		max-width: $content-max-width;
+		margin: 0 auto;
+		span{
+			color: #fff;
+			font-family: 'p22-mackinac-pro';
+			//text-transform: lowercase;
+			font-size: 20px;
+			color: #03294A;
+		}
+	}
+	ul.topnav{
+		li{
+			display: inline-block;
+			a{
+				text-transform: uppercase;
+				padding: 15px;
+				color: #fff; 
+				text-decoration: none;
+			}
+		}
+	}
+}

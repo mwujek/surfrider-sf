@@ -1,0 +1,246 @@
+// ••••••••••••••••••••••••••••••
+// ••••••••••••••••••••••••••••••
+// SET PADDING AND MARGIN
+// ••••••••••••••••••••••••••••••
+// ••••••••••••••••••••••••••••••
+@mixin set-padding-margin($fs-map, $fs-breakpoints: $breakpoints) {
+  @each $fs-breakpoint, $fs-font-size in $fs-map {
+    @if $fs-breakpoint == null { @include make-padding-margin($fs-font-size); }
+    @else { @if map-has-key($fs-breakpoints, $fs-breakpoint) {
+        $fs-breakpoint: map-get($fs-breakpoints, $fs-breakpoint);
+      }
+      @media screen and (min-width: $fs-breakpoint) {
+        @include make-padding-margin($fs-font-size);
+      }
+    }
+  }
+}
+
+// adding font family list
+@mixin make-padding-margin($fs-font-size) {
+    padding: nth($fs-font-size, 1);
+    @if (length($fs-font-size) > 1) {
+      margin: nth($fs-font-size, 2);
+    }
+}
+
+// ••••••••••••••••••••••••••••••
+// ••••••••••••••••••••••••••••••
+// SET TYPOGRAPHY
+// ••••••••••••••••••••••••••••••
+// ••••••••••••••••••••••••••••••
+@mixin set-typography($fs-map, $fs-breakpoints: $breakpoints) {
+  @each $fs-breakpoint, $fs-font-size in $fs-map {
+    @if $fs-breakpoint == null { @include make-typography($fs-font-size); }
+    @else { @if map-has-key($fs-breakpoints, $fs-breakpoint) {
+        $fs-breakpoint: map-get($fs-breakpoints, $fs-breakpoint);
+      }
+      @media screen and (min-width: $fs-breakpoint) {
+        @include make-typography($fs-font-size);
+      }
+    }
+  }
+}
+
+// font-size, font-family, weight, line height, color
+@mixin make-typography($fs-font-size) {
+    @if type-of($fs-font-size) == "list" {
+    font-size: nth($fs-font-size, 1);
+    
+    @if (length($fs-font-size) > 1) {
+      font-family: nth($fs-font-size, 2);
+    }
+    @if (length($fs-font-size) > 2) {
+      font-weight: nth($fs-font-size, 3);
+    }
+    @if (length($fs-font-size) > 3) {
+      line-height: nth($fs-font-size, 4);
+    }
+    @if (length($fs-font-size) > 4) {
+      color: nth($fs-font-size, 5);
+    }
+  }
+  @else {
+    font-size: $fs-font-size;
+  }
+}
+
+// ••••••••••••••••••••••••••••••
+// ••••••••••••••••••••••••••••••
+// SET TEXT ALIGN
+// ••••••••••••••••••••••••••••••
+// ••••••••••••••••••••••••••••••
+@mixin set-text-align($fs-map, $fs-breakpoints: $breakpoints) {
+  @each $fs-breakpoint, $fs-font-size in $fs-map {
+    @if $fs-breakpoint == null { @include make-alignment($fs-font-size); }
+    @else { @if map-has-key($fs-breakpoints, $fs-breakpoint) {
+        $fs-breakpoint: map-get($fs-breakpoints, $fs-breakpoint);
+      }
+      @media screen and (min-width: $fs-breakpoint) {
+        @include make-alignment($fs-font-size);
+      }
+    }
+  }
+}
+
+// font-size, font-family, weight, line height, color
+@mixin make-alignment($fs-font-size) {
+  text-align: $fs-font-size;
+}
+
+
+// ••••••••••••••••••••••••••••••
+// ••••••••••••••••••••••••••••••
+// SET DISPLAY
+// ••••••••••••••••••••••••••••••
+// ••••••••••••••••••••••••••••••
+@mixin set-display($fs-map, $fs-breakpoints: $breakpoints) {
+  @each $fs-breakpoint, $fs-font-size in $fs-map {
+    @if $fs-breakpoint == null { @include make-display($fs-font-size); }
+    @else { @if map-has-key($fs-breakpoints, $fs-breakpoint) {
+        $fs-breakpoint: map-get($fs-breakpoints, $fs-breakpoint);
+      }
+      @media screen and (min-width: $fs-breakpoint) {
+        @include make-display($fs-font-size);
+      }
+    }
+  }
+}
+
+// font-size, font-family, weight, line height, color
+@mixin make-display($fs-font-size) {
+  display: $fs-font-size;
+}
+
+
+// ••••••••••••••••••••••••••••••
+// ••••••••••••••••••••••••••••••
+// SET WIDTH & HEIGHT
+// ••••••••••••••••••••••••••••••
+// ••••••••••••••••••••••••••••••
+@mixin set-width-height($fs-map, $fs-breakpoints: $breakpoints) {
+  @each $fs-breakpoint, $fs-font-size in $fs-map {
+    @if $fs-breakpoint == null { @include make-width-height($fs-font-size); }
+    @else { @if map-has-key($fs-breakpoints, $fs-breakpoint) {
+        $fs-breakpoint: map-get($fs-breakpoints, $fs-breakpoint);
+      }
+      @media screen and (min-width: $fs-breakpoint) {
+        @include make-width-height($fs-font-size);
+      }
+    }
+  }
+}
+
+// width & height
+@mixin make-width-height($fs-font-size) {
+    @if type-of($fs-font-size) == "list" {
+    width: nth($fs-font-size, 1);
+    
+    @if (length($fs-font-size) > 1) {
+      height: nth($fs-font-size, 2);
+    }
+  }
+  @else {
+    width: $fs-font-size;
+  }
+}
+
+// ••••••••••••••••••••••••••••••
+// ••••••••••••••••••••••••••••••
+// SET position
+// ••••••••••••••••••••••••••••••
+// ••••••••••••••••••••••••••••••
+@mixin set-position($fs-map, $fs-breakpoints: $breakpoints) {
+  @each $fs-breakpoint, $fs-font-size in $fs-map {
+    @if $fs-breakpoint == null { @include make-position($fs-font-size); }
+    @else { @if map-has-key($fs-breakpoints, $fs-breakpoint) {
+        $fs-breakpoint: map-get($fs-breakpoints, $fs-breakpoint);
+      }
+      @media screen and (min-width: $fs-breakpoint) {
+        @include make-position($fs-font-size);
+      }
+    }
+  }
+}
+
+// width & height
+@mixin make-position($fs-font-size) {
+    top: nth($fs-font-size, 1);
+    @if type-of($fs-font-size) == "list" {
+    @if (length($fs-font-size) > 1) {
+      left: nth($fs-font-size, 2);
+    }
+
+    @if (length($fs-font-size) > 2) {
+      bottom: nth($fs-font-size, 3);
+    }
+
+    @if (length($fs-font-size) > 3) {
+      right: nth($fs-font-size, 4);
+    }
+  }
+  
+}
+
+
+// ••••••••••••••••••••••••••••••
+// ••••••••••••••••••••••••••••••
+// SET BACKGROUND
+// ••••••••••••••••••••••••••••••
+// ••••••••••••••••••••••••••••••
+@mixin set-background($fs-map, $fs-breakpoints: $breakpoints) {
+  @each $fs-breakpoint, $fs-font-size in $fs-map {
+    @if $fs-breakpoint == null { @include make-background($fs-font-size); }
+    @else { @if map-has-key($fs-breakpoints, $fs-breakpoint) {
+        $fs-breakpoint: map-get($fs-breakpoints, $fs-breakpoint);
+      }
+      @media screen and (min-width: $fs-breakpoint) {
+        @include make-background($fs-font-size);
+      }
+    }
+  }
+}
+@mixin make-background($fs-font-size) { background: $fs-font-size; } // maker
+
+
+// ••••••••••••••••••••••••••••••
+// ••••••••••••••••••••••••••••••
+// SET FLEX RULES
+// ••••••••••••••••••••••••••••••
+// ••••••••••••••••••••••••••••••
+@mixin set-flex($fs-map, $fs-breakpoints: $breakpoints) {
+  @each $fs-breakpoint, $fs-font-size in $fs-map {
+    @if $fs-breakpoint == null { @include make-flex($fs-font-size); }
+    @else { @if map-has-key($fs-breakpoints, $fs-breakpoint) {
+        $fs-breakpoint: map-get($fs-breakpoints, $fs-breakpoint);
+      }
+      @media screen and (min-width: $fs-breakpoint) {
+        @include make-flex($fs-font-size);
+      }
+    }
+  }
+}
+
+// font-size, font-family, weight, line height, color
+@mixin make-flex($fs-font-size) {
+    @if type-of($fs-font-size) == "list" {
+      flex-direction: nth($fs-font-size, 1);
+    
+    @if (length($fs-font-size) > 1) {
+      align-items: nth($fs-font-size, 2);
+      
+    }
+    @if (length($fs-font-size) > 2) {
+      justify-content: nth($fs-font-size, 3);
+    }
+    @if (length($fs-font-size) > 3) {
+      width: nth($fs-font-size, 4);
+    }
+    @if (length($fs-font-size) > 4) {
+      color: nth($fs-font-size, 5);
+    }
+  }
+  @else {
+    order: $fs-font-size;
+  }
+}
