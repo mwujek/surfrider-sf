@@ -6,12 +6,14 @@
 	right: -250px;
 	background: rgba(6,68,120,0.85);
 	transition: right 0.5s;
+	z-index: 999;
 	@include set-display($mobile-menu-display);
 
 	&.open-mobile-nav{
 		right: 0;
 	}
 	ul.mobile-nav{
+		z-index: 1000;
 		padding: 0;
 		margin: 0;
 		width: 100%;
