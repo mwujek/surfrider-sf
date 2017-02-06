@@ -1,1 +1,166 @@
-.ads{}
+// keys
+$breakpoints: (
+  phone :   480px, 
+  tablet:   850px, 
+  laptop:   1024px,
+  desktop:  1200px,
+);
+
+
+// ••••••••••••••••••••••••••••••
+// ••••••••••••••••••••••••••••••
+// set padding and margins
+// ••••••••••••••••••••••••••••••
+// ••••••••••••••••••••••••••••••
+
+// ••••••••••••••••••••••••••••••
+// header
+// ••••••••••••••••••••••••••••••
+
+$header-padding-margin: (
+  phone:   (20px, 0 auto),
+  tablet:   (20px, 0 auto),
+  laptop:   (0px, 0 auto),
+  desktop:  (0px, 0 auto)
+);
+
+
+
+
+
+// ••••••••••••••••••••••••••••••
+// ••••••••••••••••••••••••••••••
+// set typography
+// ••••••••••••••••••••••••••••••
+// ••••••••••••••••••••••••••••••
+
+
+// font-size - font-family - font-weight - line-height - color:
+
+$home-page-hero-h2: (
+  phone:   (18px, 'sofia-pro', 300, 24px, #000),
+  tablet:   (20px, 'sofia-pro', 300, 26px, #000),
+  laptop:   (22px, 'sofia-pro', 300, 28px, #000),
+  desktop:  (24px, 'sofia-pro', 300, 30px, #000)
+);
+
+$header-links:(
+	null:		(12px),
+  phone:  (12px),
+  tablet: (12px),
+  laptop: (14px),
+  desktop:(14px)
+);
+
+// ••••••••••••••••••••••••••••••
+// ••••••••••••••••••••••••••••••
+// set text align
+// ••••••••••••••••••••••••••••••
+// ••••••••••••••••••••••••••••••
+
+// home above the fold
+$signup-home-alignment: (
+	phone:   (center),
+	tablet:   (center),
+	laptop:   (left),
+	desktop:  (left)
+);
+
+
+// ••••••••••••••••••••••••••••••
+// ••••••••••••••••••••••••••••••
+// set display
+// ••••••••••••••••••••••••••••••
+// ••••••••••••••••••••••••••••••
+
+// header
+$desktop-menu:(
+	null:		(none),
+  phone:  (none),
+  tablet: (flex),
+  laptop: (flex),
+  desktop:(flex)
+);
+
+//mobile menu
+$mobile-menu-display:(
+	null:		(flex),
+  phone:  (flex),
+  tablet: (none),
+  laptop: (none),
+  desktop:(none)
+);
+
+$mobile-toggle-display:(
+	null:		(block),
+  phone:  (block),
+  tablet: (none),
+  laptop: (none),
+  desktop:(none)
+);
+
+
+// ••••••••••••••••••••••••••••••
+// ••••••••••••••••••••••••••••••
+// SET WIDTH & HEIGHT
+// ••••••••••••••••••••••••••••••
+// ••••••••••••••••••••••••••••••
+
+$text-block-height: (
+  phone:   (100%, auto),
+  tablet:   (100%, 100%),
+  laptop:   (100%, 100%),
+  desktop:  (100%, 100%)
+);
+
+// ••••••••••••••••••••••••••••••
+// ••••••••••••••••••••••••••••••
+// SET POSITION
+// ••••••••••••••••••••••••••••••
+// ••••••••••••••••••••••••••••••
+
+
+$tours-book-btn: (
+  null:   ( 10px, auto, auto, -4px !important ),
+  tablet:   ( 10px, auto, auto, 0 !important ),
+  laptop:   ( 0 !important, auto, auto, 0 !important ),
+  desktop:  ( 0 !important, auto, auto, 0 !important  )
+);
+
+// ••••••••••••••••••••••••••••••
+// ••••••••••••••••••••••••••••••
+// SET BACKGROUND
+// ••••••••••••••••••••••••••••••
+// ••••••••••••••••••••••••••••••
+
+// faq background:()
+$faq-bg: (
+  phone:   ( url(../img/ss-4.jpg) ),
+  tablet:   ( url(../img/ss-4.jpg) ),
+  laptop:   ( url(../img/ss-4.jpg) ),
+  desktop:  ( url(../img/ss-4.jpg)  )
+);
+
+// ••••••••••••••••••••••••••••••
+// ••••••••••••••••••••••••••••••
+// SET FLEX
+// ••••••••••••••••••••••••••••••
+// ••••••••••••••••••••••••••••••
+
+$image-block-flex: (
+  phone:   ( column, center, center ),
+  tablet:   ( row, center, center ),
+  laptop:   ( row, center, center ),
+  desktop:  ( row, center, center )
+);
+
+$text-block-flex-order: (
+  phone:   (2),
+  tablet:   (inherit),
+  laptop:   (inherit),
+  desktop:  (inherit)
+);
+
+
+
+

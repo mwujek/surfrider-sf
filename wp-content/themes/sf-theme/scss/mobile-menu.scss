@@ -1,0 +1,40 @@
+.mobile-menu-container{
+	position: fixed;
+	width: 245px;
+	height: calc(100vh - 60px);
+	top: 60px;
+	right: -250px;
+	background: rgba(6,68,120,0.85);
+	transition: right 0.5s;
+	@include set-display($mobile-menu-display);
+
+	&.open-mobile-nav{
+		right: 0;
+	}
+	ul.mobile-nav{
+		padding: 0;
+		margin: 0;
+		width: 100%;
+		li{
+			a{
+				font-family: 'europa';
+				font-size: 14px;
+				text-transform: uppercase;
+				letter-spacing: 0.5px;
+				-webkit-font-smoothing: antialiased;
+				text-decoration: none;
+				text-align: center;
+				color: #fff;
+				display: block;
+				padding: 20px 0;
+				border-bottom: 1px solid rgba(255,255,255,0.25);
+			}
+		}
+	}
+}
+
+i.mobile-nav-toggle{
+	color: #fff;
+	font-size: 34px;
+	@include set-display($mobile-toggle-display);
+}

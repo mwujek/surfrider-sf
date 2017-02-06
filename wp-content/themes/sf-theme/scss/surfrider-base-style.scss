@@ -1,11 +1,17 @@
 $content-max-width: 1000px;
-$blue: #2672B5;
+$content-padding: 0 15px;
+$blue: #0073be;
+$dark-blue: #074478;
 
 .content-container{
 
 }
-#main-body{
-	//padding-top: 80px;
+
+.content-inner{
+	max-width: $content-max-width;
+	padding: $content-padding;
+	box-sizing: border-box;
+	margin:  0 auto;
 }
 
 @import 'reset';
@@ -14,10 +20,12 @@ $blue: #2672B5;
 @import 'home';
 @import 'hero-sections';
 @import 'admin';
+@import 'mobile-menu';
 @import 'header';
 @import 'footer';
+@import 'sliders-and-gliders';
 
 
 body{
-	padding-top: 80px;
+	padding-top: 60px;
 }

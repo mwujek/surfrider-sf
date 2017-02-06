@@ -7,7 +7,7 @@
 		"uuidString": "42A5A4FA-FEEA-4F3A-B3DF-1E195A86367E"
 		}
 	],
-"creatorBuild": "25479",
+"creatorBuild": "25504",
 "files": {
 	"\/css\/surfrider-base-style.css": {
 		"aP": 0,
@@ -37,11 +37,137 @@
 		"oAP": "\/header.php",
 		"oF": 0
 		},
+	"\/img\/google\/ob-sunset.jpg": {
+		"ft": 16384,
+		"iS": 374133,
+		"oA": 0,
+		"oAP": "\/img\/google\/ob-sunset.jpg",
+		"oF": 0,
+		"opt": 0
+		},
+	"\/img\/jon-weiand\/baker.jpg": {
+		"ft": 16384,
+		"iS": 1769699,
+		"oA": 0,
+		"oAP": "\/img\/jon-weiand\/baker.jpg",
+		"oF": 0,
+		"opt": 0
+		},
+	"\/img\/jon-weiand\/crossing-highway.jpg": {
+		"ft": 16384,
+		"iS": 10211603,
+		"oA": 0,
+		"oAP": "\/img\/jon-weiand\/crossing-highway.jpg",
+		"oF": 0,
+		"opt": 0
+		},
+	"\/img\/jon-weiand\/ob-and-sunset.jpg": {
+		"ft": 16384,
+		"iS": 4448160,
+		"oA": 0,
+		"oAP": "\/img\/jon-weiand\/ob-and-sunset.jpg",
+		"oF": 0,
+		"opt": 0
+		},
+	"\/img\/jon-weiand\/ob-grom.jpg": {
+		"ft": 16384,
+		"iS": 4596468,
+		"oA": 0,
+		"oAP": "\/img\/jon-weiand\/ob-grom.jpg",
+		"oF": 0,
+		"opt": 0
+		},
+	"\/img\/jon-weiand\/ob-longboard-wave.jpg": {
+		"ft": 16384,
+		"iS": 3237723,
+		"oA": 0,
+		"oAP": "\/img\/jon-weiand\/ob-longboard-wave.jpg",
+		"oF": 0,
+		"opt": 0
+		},
+	"\/img\/jon-weiand\/pacifica.jpg": {
+		"ft": 16384,
+		"iS": 4020625,
+		"oA": 0,
+		"oAP": "\/img\/jon-weiand\/pacifica.jpg",
+		"oF": 0,
+		"opt": 0
+		},
+	"\/img\/jon-weiand\/wave-at-ob.jpg": {
+		"ft": 16384,
+		"iS": 3937674,
+		"oA": 0,
+		"oAP": "\/img\/jon-weiand\/wave-at-ob.jpg",
+		"oF": 0,
+		"opt": 0
+		},
+	"\/img\/logo.svg": {
+		"ft": 2097152,
+		"miP": 0,
+		"oA": 2,
+		"oAP": "\/img\/logo.svg",
+		"oF": 0,
+		"opt": 0,
+		"plM": 3758088159,
+		"prP": 0
+		},
+	"\/img\/minimal-logo.png": {
+		"ft": 32768,
+		"iS": 20559,
+		"oA": 0,
+		"oAP": "\/img\/minimal-logo.png",
+		"oF": 0,
+		"opt": 0
+		},
+	"\/img\/sf-logo.png": {
+		"ft": 32768,
+		"iS": 34326,
+		"oA": 0,
+		"oAP": "\/img\/sf-logo.png",
+		"oF": 0,
+		"opt": 0
+		},
 	"\/index.php": {
 		"ft": 8192,
 		"oA": 2,
 		"oAP": "\/index.php",
 		"oF": 0
+		},
+	"\/js\/base-script-min.js": {
+		"ft": 64,
+		"mi": 1,
+		"oA": 0,
+		"oAP": "\/js\/base-script-min-min.js",
+		"oF": 0,
+		"sC": 1,
+		"tS": 0
+		},
+	"\/js\/base-script.js": {
+		"ft": 64,
+		"mi": 0,
+		"oA": 0,
+		"oAP": "\/js\/base-script-min.js",
+		"oF": 0,
+		"sC": 1,
+		"tS": 0
+		},
+	"\/js\/home-min.js": {
+		"ft": 64,
+		"mi": 1,
+		"oA": 0,
+		"oAP": "\/js\/home-min-min.js",
+		"oF": 0,
+		"sC": 1,
+		"tS": 0
+		},
+	"\/js\/home.js": {
+		"ft": 64,
+		"mi": 0,
+		"oA": 0,
+		"oAP": "\/js\/home-min.js",
+		"oF": 0,
+		"sC": 1,
+		"tS": 0
 		},
 	"\/screenshot.jpg": {
 		"ft": 16384,
@@ -150,6 +276,19 @@
 		"oS": 0,
 		"uL": 1
 		},
+	"\/scss\/mobile-menu.scss": {
+		"aP": 0,
+		"bl": 0,
+		"dP": 10,
+		"dS": 0,
+		"ft": 4,
+		"ma": 0,
+		"oA": 1,
+		"oAP": "\/scss\/mobile-menu.css",
+		"oF": 0,
+		"oS": 0,
+		"uL": 1
+		},
 	"\/scss\/reset.scss": {
 		"aP": 0,
 		"bl": 0,
@@ -160,6 +299,19 @@
 		"oA": 1,
 		"oAP": "\/scss\/reset.css",
 		"oF": 0,
+		"oS": 0,
+		"uL": 1
+		},
+	"\/scss\/sliders-and-gliders.scss": {
+		"aP": 0,
+		"bl": 0,
+		"dP": 10,
+		"dS": 0,
+		"ft": 4,
+		"ma": 0,
+		"oA": 1,
+		"oAP": "\/scss\/sliders-and-gliders.css",
+		"oF": 1,
 		"oS": 0,
 		"uL": 1
 		},
@@ -185,6 +337,12 @@
 		"oAP": "\/style-min.css",
 		"oF": 0,
 		"oS": 0
+		},
+	"\/template-home-page-2017.php": {
+		"ft": 8192,
+		"oA": 2,
+		"oAP": "\/template-home-page-2017.php",
+		"oF": 0
 		}
 	},
 "hooks": [
@@ -843,6 +1001,10 @@
 			"active": 0,
 			"optionString": ""
 			},
+		"no-await-in-loop": {
+			"active": 0,
+			"optionString": ""
+			},
 		"no-bitwise": {
 			"active": 0,
 			"optionString": "{'allow': ['~'], 'int32Hint': true}"
@@ -1382,6 +1544,10 @@
 		"prefer-const": {
 			"active": 0,
 			"optionString": "{'destructuring': 'any', 'ignoreReadBeforeAssign': false}"
+			},
+		"prefer-destructuring": {
+			"active": 0,
+			"optionString": "{'array': true, 'object': true}, {'enforceForRenamedProperties': false}"
 			},
 		"prefer-numeric-literals": {
 			"active": 0,

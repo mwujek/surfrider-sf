@@ -11,6 +11,7 @@ update_option( 'comment_registration', 1 );
 update_option( 'comment_whitelist', 1 );
 
 register_nav_menu( 'main-menu', 'Main Menu' );
+register_nav_menu( 'mobile-menu', 'Main Menu (Mobile)' );
 $args = array(
 	'width'         => 960,
 	'height'        => 150,
